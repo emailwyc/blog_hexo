@@ -78,5 +78,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 	type: git
-	repo: git@github.com:emailwyc/emailwyc.github.io.git
 	branch: master
+	repo: 
+		github: git@github.com:emailwyc/emailwyc.github.io.git
+		coding: git@git.coding.net:emailwyc/emailwyc.git

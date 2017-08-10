@@ -3,11 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ycwang
-subtitle:
-description:
-author: ycwang
-language:
+title: 王延崇博客
+subtitle: wangyc
+description: 這麽些年,沉謎網鉻<br>
+			 敲击键盘,对望屏幕<br>
+			    得到了什么…… 
+author: 王延崇
+language: zh-Hans
 timezone:
 
 # URL
@@ -72,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: hexo-theme-next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,3 +84,10 @@ deploy:
 	repo: 
 		github: git@github.com:emailwyc/emailwyc.github.io.git
 		coding: git@git.coding.net:emailwyc/emailwyc.git
+
+algolia:
+  applicationID: 'ILGU93CBS5'
+  apiKey: '44b8bf123eba68620677e5283d860e36'
+  adminApiKey: 'a04576b4992ea01a72f6821a4093dd59'
+  indexName: 'dev_wangycblog'
+  chunkSize: 5000

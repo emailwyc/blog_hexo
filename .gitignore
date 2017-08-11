@@ -1,3 +1,4 @@
 .deploy_git/
 *.swp
 *.swo
+*.swn

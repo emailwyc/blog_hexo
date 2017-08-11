@@ -11,10 +11,10 @@ keywords: "王延崇, 草客天下, wangyc, 王延崇博客, SooneBaby, PHP, mys
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2017
 
 # icon between year and author @Footer
 authoricon: heart
@@ -47,7 +47,7 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories/
+  categories: /categories
   archives: /archives/
   tags: /tags
   about: /about/
@@ -91,8 +91,10 @@ scheme: Mist
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+	GitHub: https://github.com/emailwyc
+	Weibo: http://weibo.com/emailwyc
+	E-Mail: mailto:emailwyc@163.com?Subject=网友来信
 
 # Social Links Icons
 # Icon Mapping:
@@ -123,6 +125,10 @@ social_icons:
 #links_layout: inline
 #links:
   #Title: http://example.com/
+links_title: 友情链接
+links_layout: inline
+links:
+	草客天下: http://emailwyc.blog.163.com
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -218,7 +224,10 @@ post_wordcount:
 #reward_comment: Donate comment here
 #wechatpay: /images/wechatpay.jpg
 #alipay: /images/alipay.jpg
-#bitcoin: /images/bitcoin.png
+#bitcoin: /images/bitcoin.png/
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wechat.jpg
+alipay: /images/alipay.jpg
 
 # Declare license on posts
 post_copyright:
@@ -262,7 +271,7 @@ highlight_theme: normal
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
 font:
-  enable: true
+  enable: false
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
@@ -567,10 +576,10 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
@@ -672,3 +681,4 @@ images: images
 
 # Theme version
 version: 5.1.2
+youyan_uid: 2141363

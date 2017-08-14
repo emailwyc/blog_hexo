@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.ycwang.top/2017/08/11/hello-world/</loc>
+    <loc>http://www.ycwang.top/2017/08/10/hello-world/</loc>
     
-    <lastmod>2017-08-11T08:39:00.511Z</lastmod>
+    <lastmod>2017-08-14T12:51:15.733Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.ycwang.top/tags/index.html</loc>
+    
+    <lastmod>2017-08-14T11:47:26.165Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://www.ycwang.top/categories/index.html</loc>
     
     <lastmod>2017-08-11T05:31:50.977Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.ycwang.top/tags/index.html</loc>
-    
-    <lastmod>2017-08-10T11:09:12.022Z</lastmod>
     
   </url>
   

@@ -1,34 +1,16 @@
 ---
 title: Hello World
+date: 2017-08-10 20:20:20
 ---
-Welcome to ycwang blog! This is your very first post. Check content for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting] or you can ask me on github).
+Welcome to ycwang blog! This is your very first post. Check content for more info.
 
-## Quick Start
+## 说明
 
-### Create a new post
+### 友情链接
+ 1、在您申请本站友情链接之前请先做好本站链接，谢谢！
+ 2、网站内容无意义，百度收录5页都没有的暂不交换！
+ 3、淘宝、色情、反动、病毒、擦边球、纯商业、违法中华人民共和国法律的网站暂不交换！
+ 4、申请成功后请毋随意撤下链接，其他原因撤下请通知我，否则本站也会删除对应链接！
+ 5、我会对成功的链接经常访问，对于被K的站点，暂时会将链接撤回内页，正常后恢复！ 
 
-``` bash
-$ hexo new "My New Post"
-```
-
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
 

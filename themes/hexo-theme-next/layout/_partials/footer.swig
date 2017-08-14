@@ -14,6 +14,9 @@
 </div>
 
 <div class="theme-info">
-<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+&npsp;&npsp;&npsp;|&npsp;&npsp;&npsp;
+<a href="/sitemap.xml">网站地图</a>
+</p>
 </div>
 {% endif %}

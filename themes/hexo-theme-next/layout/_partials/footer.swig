@@ -10,7 +10,7 @@
 
 {% if theme.copyright %}
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="https://hexo.io">Hexo</a>') }}
+版权所有:倡导开源,支持原创,本博客需合法转载(注明来源)!
 </div>
 
 <div class="theme-info">

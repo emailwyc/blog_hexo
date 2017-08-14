@@ -7,6 +7,7 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
+  <meta name="wumiiVerification" content="2420b1f4-c9ff-4f11-b89f-f3dddca0e1e0" />
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}

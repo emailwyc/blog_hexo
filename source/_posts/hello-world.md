@@ -1,6 +1,10 @@
 ---
 title: Hello World
 date: 2017-08-10 20:20:20
+categories:
+	-其他
+tags:
+	-其他
 ---
 Welcome to ycwang blog! This is your very first post. Check content for more info.
 

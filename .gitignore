@@ -1,4 +1,6 @@
-.deploy_git/
+.deploy_git/*
+.deploy_git
 *.swp
 *.swo
 *.swn
+public

@@ -48,9 +48,9 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories
-  archives: /archives/
+  archives: /archives
   tags: /tags
-  about: /about/
+  about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404/
 
@@ -682,3 +682,5 @@ images: images
 # Theme version
 version: 5.1.2
 wumicomment: 1
+permalink: :category/:title
+permalink_defaults:

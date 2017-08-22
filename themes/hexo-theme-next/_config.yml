@@ -681,6 +681,6 @@ images: images
 
 # Theme version
 version: 5.1.2
-wumicomment: 1
+wumicomment: true
 permalink: :category/:title
 permalink_defaults:

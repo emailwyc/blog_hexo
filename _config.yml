@@ -82,7 +82,7 @@ deploy:
 	type: git
 	branch: master
 	repo: 
-		github: git@github.com:emailwyc/emailwyc.github.io.git
+#		github: git@github.com:emailwyc/emailwyc.github.io.git
 		coding: git@git.coding.net:emailwyc/emailwyc.git
 
 algolia:

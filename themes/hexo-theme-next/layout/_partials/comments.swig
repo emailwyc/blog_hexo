@@ -35,6 +35,12 @@
     {% elseif theme.livere_uid %}
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
     {% elseif theme.changyan.appid and theme.changyan.appkey %}
+<style>
+.module-cmt-notice {display:none !important;}
+#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w {display:none !important;}
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .post-wrap-main {background-image:none !important;}
+#SOHUCS #SOHU_MAIN .changyan-login-dialog-wrapper .platform-login .split-txt{font-size:0px;}
+</style>
       <div id="SOHUCS"></div>
     {% endif %}
   </div>

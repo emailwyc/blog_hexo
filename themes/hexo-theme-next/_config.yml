@@ -161,8 +161,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -196,7 +196,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -341,14 +341,15 @@ disqus:
 #hypercomments_id:
 
 # changyan
+#如果有一天changyan不能用了，请改成gitment
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cytbdmkYb
+  appkey: fe8799a6b48bb84fd5ec3ca25543e25b
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
+#youyan_uid: 2141363
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -681,6 +682,5 @@ images: images
 
 # Theme version
 version: 5.1.2
-wumicomment: true
 permalink: :category/:title
 permalink_defaults:

@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-
 {% set html_class = 'theme-next ' + theme.scheme %}
 {% if theme.use_motion %}
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
-
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
-  {% include '_third-party/analytics/index.swig' %}
 </head>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
-
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
-
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
     <div class="headband"></div>
 
@@ -40,7 +34,6 @@
         {% endif %}
       </div>
     </main>
-
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
@@ -48,7 +41,6 @@
         {% block footer %}{% endblock %}
       </div>
     </footer>
-
     {% if not theme.sidebar.b2t %}
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
@@ -57,21 +49,15 @@
         {% endif %}
       </div>
     {% endif %}
-
   </div>
-
   {% include '_scripts/vendors.swig' %}
   {% include '_scripts/commons.swig' %}
-
   {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
   {% include scheme_script %}
-
   {% block script_extra %}
     {% include '_scripts/pages/post-details.swig' %}
   {% endblock %}
-
   {% include '_scripts/boostrap.swig' %}
-
   {% include '_third-party/comments/index.swig' %}
   {% include '_third-party/search/index.swig' %}
   {% include '_third-party/analytics/lean-analytics.swig' %}
@@ -80,5 +66,6 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+  {% include '_third-party/analytics/index.swig' %}
 </body>
 </html>

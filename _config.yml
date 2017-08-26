@@ -91,3 +91,8 @@ algolia:
   adminApiKey: 'a04576b4992ea01a72f6821a4093dd59'
   indexName: 'dev_wangycblog'
   chunkSize: 5000
+  fields:
+	- title
+	- slug
+	- path
+	- content:strip

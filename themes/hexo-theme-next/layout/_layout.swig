@@ -72,6 +72,6 @@
 		不支持
     </audio>
   {% include '_third-party/analytics/index.swig' %}
-  <script src="/static/algolia.js"></script>
+  <script src="/static/algolia.js?v=2.0"></script>
 </body>
 </html>

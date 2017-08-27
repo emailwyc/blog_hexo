@@ -1,5 +1,6 @@
 {% if theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
-  {% if is_home() %}
+  {% if is_archive() || is_category() %}
+  {% elseif is_home() %}
     <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId={{theme.changyan.appid}}"></script>
   {% else %}
     <script type="text/javascript">

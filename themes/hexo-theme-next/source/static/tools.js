@@ -9,11 +9,11 @@ function createMusicFunction(p){
 	var x = document.createElement("audio");
 	x.setAttribute("loop", "loop");
 	var y = document.createElement("SOURCE");
-	y.setAttribute("src", "/static/music.mp3");
-	y.setAttribute("type", "audio/mp3");
+	y.setAttribute("src", CONFIG.resurl+"/static/music/music.mp3"+CONFIG.version);
+	y.setAttribute("type", "audio/mpeg");
 	x.appendChild(y);
 	var z = document.createElement("SOURCE");
-	z.setAttribute("src", "/static/music.ogg");
+	z.setAttribute("src", CONFIG.resurl+"/static/music/music.ogg"+CONFIG.version);
 	z.setAttribute("type", "audio/ogg");
 	x.appendChild(z);
 	x.preload=p;
@@ -57,4 +57,5 @@ window.onload=function(){
 	audio.play();
 	setInterval("showLogin()","800");
 }
+
 

@@ -113,6 +113,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '{{ theme.root }}',
+    resurl: '{{ theme.ycw_resurl }}',
+    version: '{{ theme.ycw_version }}',
     scheme: '{{ theme.scheme }}',
     sidebar: {{ theme.sidebar | json_encode }},
     fancybox: {{ theme.fancybox }},

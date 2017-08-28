@@ -66,11 +66,6 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
-	<audio id="music_curtime" loop="loop" autoplay="autoplay"> 
-		<source src="/static/music.mp3" type="audio/mp3">
-		<source src="/static/music.ogg" type="audio/ogg">
-		不支持
-    </audio>
   {% include '_third-party/analytics/index.swig' %}
   <script src="/static/algolia.js?v=2.0"></script>
 </body>

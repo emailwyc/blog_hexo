@@ -5,10 +5,26 @@ function getCookie(a) {
 		if (c[0] == a){return unescape(c[1]);}
 	}
 }
+function createMusicFunction(p){
+	var x = document.createElement("audio");
+	x.setAttribute("loop", "loop");
+	var y = document.createElement("SOURCE");
+	y.setAttribute("src", "/static/music.mp3");
+	y.setAttribute("type", "audio/mp3");
+	x.appendChild(y);
+	var z = document.createElement("SOURCE");
+	z.setAttribute("src", "/static/music.ogg");
+	z.setAttribute("type", "audio/ogg");
+	x.appendChild(z);
+	x.preload=p;
+	document.body.appendChild(x);
+	return x;
+}
+
 var exp = new Date();
 exp.setTime(exp.getTime()+1800*1000);
 var curPlayTime = getCookie("curPlayTime");curPlayTime=(curPlayTime==""||curPlayTime==null)?0.1:curPlayTime;
-var audio=document.getElementById("music_curtime"); audio.volume=0.1;
+var audio=null;
 document.addEventListener('touchstart', function(){
 	audio.play();
 	if(audio.currentTime<curPlayTime){
@@ -16,8 +32,6 @@ document.addEventListener('touchstart', function(){
 	}
 }, false);
 $(document).one('WeixinJSBridgeReady', function () {
-    audio.load();
-    audio.setAttribute('src', '/static/music.mp3');
 	audio.play();
 	if(audio.currentTime<curPlayTime){
 		audio.currentTime = curPlayTime;
@@ -35,11 +49,12 @@ function showLogin() {
 		audio.currentTime = curPlayTime; 
 	}
 	if(audio.currentTime>=curPlayTime){ audio.volume=0.98; }
-	if(audio.paused){
-		audio.play();
-	}
+	if(audio.paused){ audio.play(); }
 }
-$(document).ready(function(){
-    setInterval("showLogin()","800");
-});
+window.onload=function(){
+	audio=createMusicFunction("auto");
+	audio.volume="0.1";
+	audio.play();
+	setInterval("showLogin()","800");
+}
 

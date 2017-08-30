@@ -67,5 +67,48 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/analytics/index.swig' %}
+  <!--音乐播放-->
+  <link rel="stylesheet" href="/static/lib/QPlayer/css/player.css">
+<div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+<script src="/static/lib/QPlayer/js/jquery.marquee.min.js"></script>
+<script>
+	var	playlist = [
+	{title:"Luv Letter",artist:"DJ OKAWARI",mp3:"https://p2.music.126.net/hpNIN9n-_GeBCv0jMSIxww==/3172091046155063.mp3",cover:"https://p4.music.126.net/YXY1vPG5rtdV7w_cWDnNWw==/884007348732141.jpg?param=106x106",},
+{title:"塞尔号",artist:"曾轶可",mp3:"{{ theme.ycw_resurl }}/static/music/music.mp3",ogg:"{{ theme.ycw_resurl }}/static/music/music.ogg",cover:"https://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",},
+{title:"贝加尔湖畔",artist:"李健",mp3:"https://p2.music.126.net/vXnnAZFGZ30g5eCK_ccnUA==/1207263767307060.mp3",cover:"https://p4.music.126.net/aSxiiy01L3Q35IqsaAUgvQ==/100055558133714.jpg?param=106x106",},
+];
+  var isRotate = true;
+  var autoplay = true;
+</script>
+<script src="/static/lib/QPlayer/js/player.js"></script>
+<!--音乐播放-->
 </body>
 </html>

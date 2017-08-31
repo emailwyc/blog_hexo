@@ -50,6 +50,7 @@ menu:
   categories: /categories
   archives: /archives
   tags: /tags
+  photo: /photo
   about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404/
@@ -67,6 +68,7 @@ menu_icons:
   categories: th
   schedule: calendar
   tags: tags
+  photo: photo
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat

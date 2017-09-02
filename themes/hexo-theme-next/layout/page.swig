@@ -43,13 +43,15 @@
           </div>
         {% elif page.type === 'photo' %}
 <style>
+
+.main-inner { margin-top: 10px !important;}
 .album  h4{width:100%;margin:0 auto 30px auto;}.album .pagination{width:100%;margin:30px auto 30px auto;}
 .wall {display: block;position: relative;margin-bottom:10px;overflow:hidden;margin-left: -1.5%;margin-right: -1.5%;}
 .wall-column {display: block;position: relative;width: 25%;float: left;padding: 0 1.5%;box-sizing: border-box;}
 .wall-li {display: block;margin: 0 0 8% 0;padding: 5%;background:rgba(255,255,255,0.7);border-radius: 3px;position:relative;box-shadow: 0px 0  0px rgba(0, 0, 0, 0.05);transition:all 0.2s;overflow: hidden;box-sizing:border-box;position: relative;border:1px solid rgba(0,0,0,0.1);}
 .wall-li:hover{border:1px solid #ff4200;box-shadow:0 0 10px #555;}
 .wall-li img {display: block;width: 100%;margin: 0 0 5% 0;}
-.wall-li p{ overflow: hidden; font-weight:bold;text-overflow: ellipsis; white-space: nowrap; width: 100%; font-size: 14px;padding-bottom:10px; }
+.wall-li p{ overflow: hidden; font-weight:bold;text-overflow: ellipsis; white-space: nowrap; width: 100%; font-size: 14px;padding-bottom:5px;margin-bottom: 5px; }
 .wall-li small{ font-size:12px; color: #777; display:inline-block;line-height:15px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
 .wall-li small:nth-of-type(1){float:left}
 .wall-li small:nth-of-type(2){float:right}
@@ -60,6 +62,14 @@
 .wall-li:hover .show-btn{transform:scale(1);-webkit-transform:scale(1);}
 .show-pic{left:0;}
 .show-info{right:0;}
+.img_loading{background:rgba(255,255,255,0.6) url(/images/myloading.gif) no-repeat center center;}
+.img_loading img{    opacity: 0;}
+@media screen and (min-width:320px) and (max-width:768px){
+    .wall-column{width:50%;}
+    .wall-li p,.wall-li small{font-size:12px;padding:0;}
+    .wall{margin-left:-1%;margin-right:-1%;}
+
+}
 </style>
 <div class="instagram">
 <ul class="wall baguetteBoxOne gallery img-box-ul" >

@@ -22,7 +22,7 @@ var photojs={
             var filename = data[i].substring(0,data[i].lastIndexOf("."));
             li += '<div class="wall-li">' +
                 '<a class="show-pic lightbox soone'+page+'" href="'+CONFIG.resurl+'/static/photo/' + data[i] + '?raw=true" title="'+filename+'" rel="group">' +
-                '<img src="'+CONFIG.resurl+'/static/photo/' + data[i] + '?raw=true" title="'+filename+'" alt="'+filename+'">' +
+                '<img class="img_loading" src="'+CONFIG.resurl+'/static/photo/' + data[i] + '?raw=true" title="'+filename+'" alt="'+filename+'">' +
                 '</a></div>';
         }
 
@@ -35,6 +35,9 @@ var photojs={
         //瀑布流start
         $('.wall').jaliswall({ item: '.wall-li' });
         //瀑布流end
+        $(".img_loading").load(function(){
+            $(this).removeClass("img_loading");
+        });
     },
 
     scroll: function (data) {

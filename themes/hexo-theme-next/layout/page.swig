@@ -43,10 +43,8 @@
           </div>
         {% elif page.type === 'photo' %}
 <style>
-
 .main-inner { margin-top: 10px !important;}
-.album  h4{width:100%;margin:0 auto 30px auto;}.album .pagination{width:100%;margin:30px auto 30px auto;}
-.wall {display: block;position: relative;margin-bottom:10px;overflow:hidden;margin-left: -1.5%;margin-right: -1.5%;}
+.wall {display: block;position: relative;margin-bottom:10px;overflow:hidden;margin-left: -1.5%;margin-right: -1.5%;padding-left:0px;}
 .wall-column {display: block;position: relative;width: 25%;float: left;padding: 0 1.5%;box-sizing: border-box;}
 .wall-li {display: block;margin: 0 0 8% 0;padding: 5%;background:rgba(255,255,255,0.7);border-radius: 3px;position:relative;box-shadow: 0px 0  0px rgba(0, 0, 0, 0.05);transition:all 0.2s;overflow: hidden;box-sizing:border-box;position: relative;border:1px solid rgba(0,0,0,0.1);}
 .wall-li:hover{border:1px solid #ff4200;box-shadow:0 0 10px #555;}

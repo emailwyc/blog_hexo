@@ -66,7 +66,7 @@
     .wall-column{width:50%;}
     .wall-li p,.wall-li small{font-size:12px;padding:0;}
     .wall{margin-left:-1%;margin-right:-1%;}
-
+    .header-inner {margin-bottom: 5px;}
 }
 </style>
 <div class="instagram">

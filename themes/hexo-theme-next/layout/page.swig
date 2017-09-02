@@ -65,7 +65,6 @@
 <ul class="wall baguetteBoxOne gallery img-box-ul" >
 </ul>
 </div>
-<script src="/static/lib/photo/photo.js"></script>
         {% else %}
           {{ page.content }}
         {% endif %}

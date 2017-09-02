@@ -110,5 +110,12 @@
 </script>
 <script src="/static/lib/QPlayer/js/player.js"></script>
 <!--音乐播放-->
+
+<!--相册-->
+{% if page.type === 'photo' %}
+<script src="/static/lib/photo/jaliswall.js"></script>
+<script src="/static/lib/photo/photo.js"></script>
+{% endif %}
+<!--相册-->
 </body>
 </html>

@@ -20,19 +20,21 @@ var photojs={
         var html, li = "";
         for (var i = begin; i < end && i < data.length; i++) {
             var filename = data[i].substring(0,data[i].lastIndexOf("."));
-            li += '<div class="wall-column"><div class="wall-li">' +
-                '<a class="show-pic lightbox soone'+page+'" href="'+CONFIG.resurl+'/static/photo/source/' + data[i] + '?raw=true" title="'+filename+'" rel="group">' +
-                '<img src="'+CONFIG.resurl+'/static/photo/source/' + data[i] + '?raw=true" title="'+filename+'" alt="'+filename+'">' +
-                '</a></div></div>';
+            li += '<div class="wall-li">' +
+                '<a class="show-pic lightbox soone'+page+'" href="'+CONFIG.resurl+'/static/photo/' + data[i] + '?raw=true" title="'+filename+'" rel="group">' +
+                '<img src="'+CONFIG.resurl+'/static/photo/' + data[i] + '?raw=true" title="'+filename+'" alt="'+filename+'">' +
+                '</a></div>';
         }
 
         $(".img-box-ul").append(li);
         $('.soone'+page).find('img').lazyload({
-            placeholder: '/images/loading1.gif',
-            effect: 'fadeIn',
-            threshold : 0
+           // placeholder: '/images/loading.gif',
+            effect: 'fadeIn'
         });
         NexT.utils.wrapImageWithFancyBox1('.soone'+page);
+        //瀑布流start
+        $('.wall').jaliswall({ item: '.wall-li' });
+        //瀑布流end
     },
 
     scroll: function (data) {
@@ -50,6 +52,5 @@ var photojs={
         })
     }
 }
-window.onload = function () {
-    photojs.init();
-}
+photojs.init();
+

@@ -28,7 +28,7 @@ var photojs={
 
         $(".img-box-ul").append(li);
         $('.soone'+page).find('img').lazyload({
-            placeholder: '/images/loading.gif',
+            placeholder: '/images/loading1.gif',
             effect: 'fadeIn',
             threshold : 0
         });

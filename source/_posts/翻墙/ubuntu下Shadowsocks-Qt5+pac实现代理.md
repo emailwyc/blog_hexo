@@ -7,8 +7,8 @@ categories:
 tags: 
  - 翻墙
  - pac代理
-description: 
 ---
+本文描述了如何在ubuntu上如何使用pac代理，以及代理过程中遇到得各种问题．
 1. #### 安装配置shadowsocks-Q5
 
    通过PPA源安装，仅支持Ubuntu 14.04或更高版本; 大家可以参考[官网github](https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97)上更为详细的安装说明

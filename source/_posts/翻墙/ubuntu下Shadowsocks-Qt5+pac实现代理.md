@@ -7,7 +7,7 @@ categories:
 tags: 
  - 翻墙
  - pac代理
-description: ubuntu实现pac全局代理
+description: 
 ---
 1. #### 安装配置shadowsocks-Q5
 

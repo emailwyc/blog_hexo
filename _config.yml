@@ -95,4 +95,3 @@ algolia:
 	- title
 	- slug
 	- path
-	- content:strip

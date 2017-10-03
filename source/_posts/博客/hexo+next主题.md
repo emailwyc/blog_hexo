@@ -254,13 +254,17 @@ photo.js文件内容如下：
  mac 下安装完hexo,执行hexo命令发现: 
 
 ```
-
+[soone] ~/blog_hexo $ hexo clean
+{ Error: Cannot find module './build/Release/DTraceProviderBindings'
+    at Function.Module._resolveFilename (module.js:485:15)
+    at Function.Module._load (module.js:437:25)
+    at Module.require (module.js:513:17)
 ```
 
 但是这个错误不会影响正常的运行,但对于强迫症来说，这是无法忍受 的
 
 ```
-
+npm install hexo --no-optional --save
 ```
 
 如果发现还是不行的话,检查一下是否运行的是项目中的包,,我们删除项目中的hexo 包,改装成全局的应该就可以了.

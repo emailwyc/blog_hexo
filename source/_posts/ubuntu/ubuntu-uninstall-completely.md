@@ -23,4 +23,4 @@ sudo apt-get install openssh-server
 ps -ef|grep ssh
 ```
 
-sshd正常启动
+sshd正常启动~

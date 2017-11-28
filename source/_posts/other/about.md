@@ -1,8 +1,8 @@
 ---
 title: 关于
 date: 2017-08-10 20:20:20
-categories: 其他
-tags: 其他
+categories: other
+tags: other
 ---
 {% img 王延崇 /images/about-me.jpg %}
 本博客记录作者本人在技术中遇到的点滴，记录在这里供其他人参考和赏阅；支持原创并坚信会一直行走在原创之路上．．．

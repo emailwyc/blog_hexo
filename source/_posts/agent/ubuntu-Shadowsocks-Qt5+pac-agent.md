@@ -2,11 +2,11 @@
 title: ubuntu下Shadowsocks-Qt5+pac实现代理
 date: 2017-09-26 18:18:18
 categories: 
- - 翻墙
+ - agent
  - pac
 tags: 
- - 翻墙
- - pac代理
+ - agent
+ - pac-agent
 ---
 本文描述了如何在ubuntu上如何使用pac代理，以及代理过程中遇到得各种问题．
 1. #### 安装配置shadowsocks-Q5

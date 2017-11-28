@@ -5,7 +5,7 @@ categories:
  - Mac
 tags: 
  - Mac
- - 终端
+ - termina
 ---
 家里的Mac mini搁置了很长时间,这次十一放假恰巧碰到公司一些紧急的任务需要处理,处理完之后,把终端做了简单配置,这里只做记录:
 #### 一、终端(termina)ls 配色
